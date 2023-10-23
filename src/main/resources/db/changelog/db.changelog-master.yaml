@@ -1,0 +1,22 @@
+databaseChangeLog:
+  - changeSet:
+      id: 10183768-1
+      author: '@Aikay'
+      loadData:
+        file: static/MOCK_DATA.csv
+        separator: ","
+        tableName: patient
+        columns:
+          - column:
+              name: first_name
+              type: VARCHAR(255)
+          - column:
+              name: last_name
+              type: VARCHAR(255)
+          - column:
+              name: age
+              type: NUMERIC
+          - column:
+              name: last_visit_date
+              type: VARCHAR(255)
+      searchPath: src/main/resources
