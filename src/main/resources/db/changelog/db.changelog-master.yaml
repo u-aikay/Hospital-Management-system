@@ -20,3 +20,37 @@ databaseChangeLog:
               name: last_visit_date
               type: VARCHAR(255)
       searchPath: src/main/resources
+  - changeSet:
+      id: 10183768-2
+      author: '@Aikay'
+      changes:
+        - insert:
+            tableName: staff
+            columns:
+              - column:
+                  name: id
+                  value: 15
+              - column:
+                  name: first_name
+                  value: Kelvin
+              - column:
+                  name: last_name
+                  value: Femi
+              - column:
+                  name: uuid
+                  value: 96807292-b819-4fe7-869b-5eaaedbc7a92
+              - column:
+                  name: role
+                  value: HOD
+              - column:
+                  name: email
+                  value: femi@ymail.com
+              - column:
+                  name: password
+                  value: $2a$10$5zvgrWpUHDWo208ATtYqp.vH2gk4MKVqArkx6hyrz.Mdy2HsnV1om
+              - column:
+                  name: registration_date
+                  value: '2023-10-22 01:00:00'
+
+
+

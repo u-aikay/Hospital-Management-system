@@ -20,6 +20,13 @@ public class StaffController {
 
 
     //REGISTER STAFF
+    /**
+        Staff registration can only be done by the HOD,
+        A default HOD profile has been preloaded to the dataBase
+        -User will need to login as the HOD
+        -with the generated token, the endpoint to add staff can be called.
+        -Login credential{email = femi@ymail.com; password = 12345}
+    */
     @PostMapping("/add_staff")
     public ResponseEntity<String> registerStaff(@RequestBody Staff staffObject, @RequestHeader("Authorization") String token) {
 
