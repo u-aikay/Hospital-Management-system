@@ -44,7 +44,7 @@ databaseChangeLog:
                   value: HOD
               - column:
                   name: email
-                  value: femi@ymail.com
+                  value: aikay@ymail.com
               - column:
                   name: password
                   value: $2a$10$5zvgrWpUHDWo208ATtYqp.vH2gk4MKVqArkx6hyrz.Mdy2HsnV1om
